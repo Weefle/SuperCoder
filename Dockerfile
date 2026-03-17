@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/golang:1.22.3-bookworm AS build-base
+FROM public.ecr.aws/docker/library/golang:1.24-bookworm AS build-base
 
 RUN apt-get update && apt-get install -y jq postgresql-client && apt-get clean && rm -rf /var/lib/apt/lists/*
 
